@@ -2,10 +2,12 @@ import {Action} from 'redux'
 import {ThunkAction} from 'redux-thunk'
 import {configureStore} from '@reduxjs/toolkit'
 import LoginSlice from '@/lib/features/login/loginSlice'
+import uploadSlice from '@/lib/features/upload/uploadSlice'
 
 export const store = configureStore({
     reducer: {
-        login: LoginSlice
+        login: LoginSlice,
+        upload: uploadSlice
     },
 })
 
